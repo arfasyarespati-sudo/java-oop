@@ -1,0 +1,53 @@
+package UAP;
+
+public abstract class Kendaraan {
+    private String kodeKendaraan;
+    private String namaKendaraan;
+    private double hargaSewaPerHari;
+    private boolean isTersedia;
+
+    public Kendaraan(String kodeKendaraan, String namaKendaraan, double hargaSewaPerHari) {
+        this.kodeKendaraan = kodeKendaraan;
+        this.namaKendaraan = namaKendaraan;
+        this.hargaSewaPerHari = hargaSewaPerHari;
+        this.isTersedia = true;
+    }
+
+    public String getKodeKendaraan() {
+        return kodeKendaraan;
+    }
+
+    public void setKodeKendaraan(String kodeKendaraan) {
+        this.kodeKendaraan = kodeKendaraan;
+    }
+
+    public String getNamaKendaraan() {
+        return namaKendaraan;
+    }
+
+    public void setNamaKendaraan(String namaKendaraan) {
+        this.namaKendaraan = namaKendaraan;
+    }
+
+    public double getHargaSewaPerHari() {
+        return hargaSewaPerHari;
+    }
+
+    public void setHargaSewaPerHari(double hargaSewaPerHari) {
+        this.hargaSewaPerHari = hargaSewaPerHari;
+    }
+
+    public boolean isTersedia() {
+        return isTersedia;
+    }
+
+    public void setTersedia(boolean isTersedia) {
+        this.isTersedia = isTersedia;
+    }
+
+    public abstract void tampilInfo();
+
+    public double hitungBiayaDasar(int lamaSewa) {
+        return hargaSewaPerHari * lamaSewa;
+    }
+}

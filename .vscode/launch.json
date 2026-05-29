@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "UAP.Main",
+      "projectName": "Pemlan_8580edd8"
+    },
+    {
+      "type": "java",
       "name": "Soal2",
       "request": "launch",
       "mainClass": "Projects.PRAKTIKUM11.Soal2",
