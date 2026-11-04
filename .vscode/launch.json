@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SimpleArr",
+      "request": "launch",
+      "mainClass": "DSA.SimpleArr",
+      "projectName": "java-oop_7e60c197"
+    },
+    {
+      "type": "java",
+      "name": "Graphering",
+      "request": "launch",
+      "mainClass": "DSA.Graphering",
+      "projectName": "java-oop_7e60c197"
+    },
+    {
+      "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "UAP.Main",
